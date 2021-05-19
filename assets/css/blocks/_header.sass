@@ -1,0 +1,192 @@
+.header
+	width: 100%
+	background: url('../../assets/img/header_bg.jpg') bottom 15% right 70% no-repeat
+	background-size: cover
+	padding: 50px 50px 0 13%
+	position: relative
+	@media screen and (max-width: 440px)
+		padding-top: 80px
+	&__menu-btn
+		position: absolute
+		top: 18px
+		display: none
+		width: 40px
+		height: 40px
+		border: 3px solid $bgorange
+		background: transparent
+		border-radius: 6px
+		cursor: pointer
+		align-items: center
+		justify-content: center
+		flex-wrap: wrap
+		align-content: center
+		@media screen and (max-width: 440px)
+			display: flex
+		&__line
+			width: 80%
+			height: 4px
+			background: $bgorange
+			margin: 3px 0
+			border-radius: 2px
+	&__menu
+		background: transparent
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		flex-wrap: wrap
+		list-style: none
+		margin-bottom: 440px
+		transition: .7s
+		position: relative
+		z-index: 8
+		@media screen and (max-width: 560px)
+			margin-left: -10%
+			margin-top: -35px
+			margin-bottom: 190px
+		@media screen and (max-width: 440px)
+			background: #ccc
+			border: 2px solid $bgorange
+			border-radius: 6px
+			opacity: .9
+			position: absolute
+			margin: 0
+			width: 90%
+			height: 80%
+			left: 5%
+			top: -700px
+			padding-top: 40px
+		&__item
+			margin: 10px 40px 10px 0
+			@media screen and (max-width: 560px)
+				margin: 10px 30px 10px 0
+			@media screen and (max-width: 440px)
+				display: block
+				width: 100%
+				text-align: center
+				margin: 0
+		&__item a
+			text-transform: uppercase
+			text-decoration: none
+			+rr(#fff, 14px)
+			font-weight: bold
+			@media screen and (max-width: 560px)
+				+rr(#fff, 12px)
+			@media screen and (max-width: 440px)
+				+rr($bgorange, 24px)
+				text-align: center
+			&:after
+				background: transparent
+				display: block
+				content: ""
+				height: 2px
+				width: 0%
+				position: relative
+				top: 5px
+				left: 50%
+				transition: width .3s ease-in-out
+				@media screen and (max-width: 440px)
+					display: none
+			&:hover:after
+				width: 100%
+				transform: translateX(-50%)
+				background: $bgorange
+		&__close-btn
+			border: 2px solid #fff
+			border-radius: 4px
+			display: none
+			color: #fff
+			background: $bgorange
+			width: 40px
+			height: 40px
+			@media screen and (max-width: 440px)
+				display: block
+				position: absolute
+				top: 15px
+				left: 25px
+	&__deviceMenu
+		left: 5%
+		top: 0
+		transition: .7s
+	&__logo
+		color: #fff
+		text-transform: uppercase
+		position: absolute
+		top: 85px
+		right: 10px
+		font: 18px Arial
+		font-weight: 700
+		letter-spacing: 3px
+		transform: rotate(90deg)
+		@media screen and (max-width: 540px)
+			top: 50px
+			right: -10px
+		&__orange
+			color: $bgorange
+	&__content
+		width: 385px
+		height: 270px
+		margin-bottom: 100px
+		@media screen and (max-width: 540px)
+			width: 280px
+			margin-left: -10%
+			margin-bottom: 70px
+		&__text h1
+			+rl(#fff, 34px)
+			text-transform: uppercase
+			padding-bottom: 35px
+		&__text p
+			+osr($darktext, 14px)
+			line-height: 24px
+		&__lines
+			+osr(#fff, 25px)
+			width: 120px
+			height: 25px
+			text-align: justify
+			line-height: 18px
+			margin-top: 25px
+			font-weight: 800
+			&__pointer
+				position: relative
+				top: 1.5px
+				left: 65px
+			&__line
+				color: #6c6c6c
+			&:before
+				position: relative
+				content: '\2013'
+				color: #6c6c6c
+				bottom: 230px
+	&__buttons
+		width: 120px
+		display: inline-flex
+		margin-bottom: 330px
+		@media screen and (max-width: 1240px)
+			margin-bottom: 200px
+		@media screen and (max-width: 540px)
+			margin-bottom: 185px
+			margin-left: -10%
+		&__button-bottom
+			width: 55px
+			height: 55px
+			border-radius: 50%
+			text-align: center
+			margin: 2px
+			color: #fff
+			background: transparent
+			outline: none
+			border: 2px solid #fff
+			+rl(#fff, 28px)
+			cursor: pointer
+			display: inline-block
+			transition: .2s
+			&:hover
+				color: $bgorange
+				border: 1px solid $bgorange
+			& span
+				position: relative
+				bottom: 2px
+		&__button-right
+			@extend  .header__buttons__button-bottom
+			transform: rotate(90deg)
+			order: -1
+

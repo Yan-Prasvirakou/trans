@@ -1,0 +1,86 @@
+.form
+	background: $bgdark url('../../assets/img/form_bg.jpg') left 0 top 260px no-repeat
+	background-size: cover
+	margin-left: 15%
+	width: 85%
+	padding: 50px 15% 900px 60px
+	@media screen and (max-width: 1240px)
+		padding-bottom: 650px
+	@media screen and (max-width: 540px)
+		margin-left: 0
+		width: 100%
+	h2
+		+rl(#fff, 35px)
+		margin-bottom: 20px
+		margin-left: 7%
+		text-transform: uppercase
+		@media screen and (max-width: 1200px)
+			margin-left: 0
+			margin-bottom: 40px
+			text-align: center
+		@media screen and (max-width: 540px)
+			+rl(#fff, 28px)
+		@media screen and (max-width: 380px)
+			+rl(#fff, 24px)
+	&__inputs
+		display: flex
+		flex-wrap: wrap
+		width: 100%
+		@media screen and (max-width: 1200px)
+			justify-content: center
+		input
+			padding: 4px
+			margin-right: 4px
+			margin-top: 4px
+			height: 60px
+			outline: none
+			+mr($bgdark, 12px)
+			@media screen and (max-width: 1200px)
+				margin-right: 0
+			@media screen and (max-width: 700px)
+				height: 45px
+			&::placeholder
+				+mr($bgdark, 12px)
+			&:focus
+				background: #ddd
+				border: none
+		&__name, &__phone
+			width: 22%
+			@media screen and (max-width: 1200px)
+				width: 52%
+				margin-right: 0
+			@media screen and (max-width: 700px)
+				width: 65%
+			@media screen and (max-width: 540px)
+				width: 90%
+		&__mail
+			width: 33%
+			@media screen and (max-width: 1200px)
+				width: 52%
+				margin-right: 0
+			@media screen and (max-width: 700px)
+				width: 65%
+			@media screen and (max-width: 540px)
+				width: 90%
+		&__btn
+			width: 150px
+			background: $bgdark
+			border: 2px solid #fff
+			color: #fff
+			font-size: 15px
+			transition: .2s
+			text-align: center
+			height: 67px
+			@media screen and (max-width: 1200px)
+				width: 52%
+				margin-top: 2px
+			@media screen and (max-width: 700px)
+				width: 65%
+			@media screen and (max-width: 540px)
+				width: 90%
+			&:hover
+				background: #fff
+				color: $bgdark
+			
+
+				

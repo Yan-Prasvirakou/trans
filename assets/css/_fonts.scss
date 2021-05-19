@@ -1,0 +1,46 @@
+//формат scss вместо sass выбран для того, чтобы можно было вставлять шрифты, не заморачиваясь над скобками и точками с запятой
+@font-face {
+	font-family: 'Raleway Regular';
+	src: url('../fonts/Raleway-Regular.eot');
+	src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Raleway-Regular.woff') format('woff'),
+	url('../fonts/Raleway-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway Light';
+	src: url('../fonts/Raleway-Light.eot');
+	src: url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Raleway-Light.woff') format('woff'),
+	url('../fonts/Raleway-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Regular';
+	src: url('../fonts/OpenSans-Regular.eot');
+	src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-Regular.woff') format('woff'),
+	url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat Regular';
+	src: url('../fonts/Montserrat-Regular.eot');
+	src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat-Regular.woff') format('woff'),
+	url('../fonts/Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin rr($color, $size) {font-family: 'Raleway Regular', sans-serif; color: $color; font-size: $size;}
+@mixin rl($color, $size) {font-family: 'Raleway Light', sans-serif; color: $color; font-size: $size;}
+@mixin osr($color, $size) {font-family: 'Open Sans Regular', sans-serif; color: $color; font-size: $size;}
+@mixin mr($color, $size) {font-family: 'Montserrat Regular', sans-serif; color: $color; font-size: $size;}
+

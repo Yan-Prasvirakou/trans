@@ -1,0 +1,37 @@
+.text 
+	width: 100%
+	padding-left: 15%
+	padding-right: 15%
+	margin-bottom: 80px
+	column-count: 2
+	column-width: 49%
+	column-gap: 2%
+	@media screen and (max-width: 700px)
+		width: 100%
+		column-gap: 5%
+	@media screen and (max-width: 480px)
+		column-count: 1
+	h2
+		text-transform: uppercase
+		+rl($darkhead, 30px)
+		column-span: all
+		padding-bottom: 25px
+		@media screen and (max-width: 700px)
+			+rl($darkhead, 20px)
+			text-align: center
+	&__first
+		+osr(#cacaca, 15px)
+		padding-bottom: 25px
+		@media screen and (max-width: 700px)
+			+osr(#cacaca, 12px)
+			padding-bottom: 20px
+	&__nth
+		+osr($darktext, 14px)
+		padding-bottom: 25px
+		@media screen and (max-width: 700px)
+			+osr($darktext, 12px)
+			padding-bottom: 20px
+
+	
+
+
